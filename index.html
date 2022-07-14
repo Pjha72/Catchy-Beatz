@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PlayMusic</title>
+	<!-- favicon -->
+	<link rel="icon" type="logo" href="logo_music.png">
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="card.css">
+</head>
+<body>
+	<!-- Nav Bar -->
+	<!-- 1.logo
+	2.name
+	3.home
+	4.search
+	5.bell icon
+	6.profile -->
+	<nav class="sidebar close">
+		<header>
+			<div class="image-text">
+				<span class="image">
+					<img src="image/logo_music.png" alt="logo">
+				</span>
+				<div class="text header-text">
+					<span class="name">PlayMusic</span>
+					<span class="profession">Music</span>
+				</div>
+			</div>
+			<i class='bx bx-chevron-right toggle'></i>
+		</header>
+		<div class="menu-bar">
+			<div class="menu">
+				<li class="search-box">
+					<i class='bx bx-search icon' ></i>
+						<input type="text" placeholder="Search...">
+						<!-- <div class="search_result">
+							<a href="#" class="card">
+								<img src="Bad boy.jpg" alt="">
+								<div class="content"></div>
+							</a>
+							<a href="#" class="card"></a> -->
+					
+						<!-- </div> -->
+				</li>
+				<ul class="menu-links">
+					<li class="nav-links">
+						<a href="#">
+							<i class='bx bx-home-alt icon' ></i>
+							<span class="text nav-text">Dashboard</span>
+						</a>
+					</li>
+					<li class="nav-links">
+						<a href="#">
+							<i class='bx bx-bell icon' ></i>
+							<span class="text nav-text">Notification</span>
+						</a>
+					</li>
+					<li class="nav-links">
+						<a href="#">
+							<i class='bx bx-message-alt-add icon' ></i>
+							<span class="text nav-text">New Release</span>
+						</a>
+					</li>
+					<li class="nav-links">
+						<a href="#">
+							<i class='bx bxl-spring-boot icon' ></i>
+							<span class="text nav-text">Bhakti</span>
+						</a>
+					</li>
+					<li class="nav-links">
+						<a href="#">
+							<i class='bx bx-user icon' ></i>
+							<span class="text nav-text">Artist</span>
+						</a>
+					</li>
+					<li class="nav-links">
+						<a href="#">
+							<i class='bx bx-paperclip icon' ></i>
+							<span class="text nav-text">Top Playlist</span>
+						</a>
+					</li>
+					<li class="nav-links">
+						<a href="#">
+							<i class='bx bx-heart icon'></i>
+							<span class="text nav-text">Likes</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="bottom-content">
+				<li class="">
+					<a href="login/login.html" >
+						<i class='bx bx-log-out icon' target="_blank"></i>
+						<span class="text nav-text" >Logout</span>
+					</a>
+				</li>
+				<li class="mode">
+					<div class="moon-sun">
+						<i class='bx bx-moon icon moon'></i>
+						<i class='bx bx-sun icon sun'></i>
+					</div>
+					<span class="mode-text text">
+						Dark Mode
+					</span>
+
+					<div class="toggle-switch">
+						<span class="switch"></span>
+					</div>
+				</li>
+			</div>
+		</div>
+
+		
+	</nav>
+
+	<section class="home">
+		<div class="text">
+			Recently Played
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/tum hi ho.jpg" /> </div>
+			  <div class="card_title title-white">
+				<p>Tum Hi Ho</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/lut gaye.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Lut Gaye</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/dil galti.jpg" />
+				</div>
+				<div class="card_title">
+				  <p>Dil Galti Kar..</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/mercy.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Mercy</p>
+				</div>
+				</div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/ek 1.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Ek Villain</p>
+				</div>
+				</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/humma.jpg" /> </div>
+			  <div class="card_title title-white">
+				<p>The Humma</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/tere naal.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Tere Naal Nachna</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/snam.jpg" />
+				</div>
+				<div class="card_title">
+				  <p>Snam re</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/nashe se.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Nashe se Chad</p>
+				</div>
+				</div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/BB2.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Bhool Bhulaiyaa</p>
+				</div>
+				</div>
+			  
+        </div>
+
+	</section>
+	<section class="home">
+		<div class="text">
+			Playlist For You
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/TPL-1.webp" /> </div>
+			  <div class="card_title title-white">
+				<p>Reelin It In</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/TPL-2.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Sidhu Moosewala</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/TPL-3.webp" />
+				</div>
+				<div class="card_title">
+				  <p>New English Song</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/TPL-4.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Top 2000's Songs</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/TPL-4.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Top 1990's Songs</p>
+					</div>
+					</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/TPL-5.webp" /> </div>
+			  <div class="card_title title-white">
+				<p>Big Hits Punjabi</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/TPL-6.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Big Hits English</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/TPL-7.webp" />
+				</div>
+				<div class="card_title">
+				  <p>Top Searchs On PlayMusic</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/TPL-8.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Viral Hits (Hindi)</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/TPL-8.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Viral Hits (English)</p>
+					</div>
+					</div>
+			  
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			Album
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/ek 1.jpg" /> </div>
+			  <div class="card_title title-white">
+				<p>Ek Villain Returns</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/BB2.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Bhool Bhulaiyaa 2</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/shersash.jpg" />
+				</div>
+				<div class="card_title">
+				  <p>Shershaah</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/Hit the first case.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Hit - The first Case</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/love aaj kal.jpg" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Love Aaj Kal</p>
+					</div>
+					</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/soryavanshi.jpg" /> </div>
+			  <div class="card_title title-white">
+				<p>Sooryavanshi</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/kgf2.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>K.G.F 2(Hindi)</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/street dancer3.jpg" />
+				</div>
+				<div class="card_title">
+				  <p>Street Dancer 3D</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/satymave jayte 2.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Satyameva Jayate 2</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/radhe shyam.jpg" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Radhe Shyam (Hindi)</p>
+					</div>
+					</div>
+			  
+        </div>
+	</section>
+
+	<section class="home">
+		<div class="text">
+			Modes & Genres
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/MG-1.jpg"/> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/MG-2.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/MG-3.webp" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/MG-4.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/MG-4.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <!-- <p>Card Title</p> -->
+					</div>
+				</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/MG-5.webp" /> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/MG-6.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/MG-7.webp" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/MG-8.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			   </div>
+			   <div class="card 5">
+				<div class="card_image">
+				  <img src="image/MG-8.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			   </div>
+			  
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			Artist For You
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/Arjit singh.jpg" /> </div>
+			  <div class="card_title title-white">
+				<p>Arijit Singh</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/Shreya.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Shreya Ghoshal</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/Jubin.jpg" />
+				</div>
+				<div class="card_title">
+				  <p>Jubin Natuiyal</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/pritm.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Pritam</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/Neha.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Neha Kakkar</p>
+					</div>
+				</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/Tanishk.jpg" /> </div>
+			  <div class="card_title title-white">
+				<p>Tanishk Bagchi</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/Ashtha gil.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Ashtha Gil</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/Justin.jpg" />
+				</div>
+				<div class="card_title">
+				  <p>Justin Bieber</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/sunanda.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Sunanada Sharma</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/B praak.jpg" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>B Praak</p>
+					</div>
+				</div>
+			  
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			Podcasts Top Charts
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/sachin.jpg" /> </div>
+			  <div class="card_title title-white">
+				<p>Sachin Tendulkar</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/DT.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Donald Trump</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/P-3.jfif" />
+				</div>
+				<div class="card_title">
+				  <p>Garv Hai</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/P-4.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Sarthak's Rockumentary</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/APJ.jpg" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>A.P.J.Abdul Kalam</p>
+					</div>
+					</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/p-5.jpg" /> </div>
+			  <div class="card_title title-white">
+				<p>Investment Ki Shuruaat Amitabh Ke Saath</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/p-6.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Jai Shree Hanuman</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/p-7.jpg" />
+				</div>
+				<div class="card_title">
+				  <p>Gaana Zero Hour International</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/P-8.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Numerology By Dr Jai Madaan</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/elon.jpg" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Elon Musk</p>
+					</div>
+					</div>
+			  
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			Treading Songs
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/T-1.jpg" /> </div>
+			  <div class="card_title title-white">
+				<p>Iss Baarish Mein</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/TS-1.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Darbadar</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/TS-2.webp" />
+				</div>
+				<div class="card_title">
+				  <p>Bhool Bhulaiyaa 2 Title Track</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/TS-3.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Somebody Like U</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/ek 1.jpg" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Ek Villain</p>
+					</div>
+					</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/TS-4.webp" /> </div>
+			  <div class="card_title title-white">
+				<p>Duppata</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/TS-5.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Halki Si Barsaat</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/TS-6.webp" />
+				</div>
+				<div class="card_title">
+				  <p>Hum Nashe Mein Toh Nahi</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/TS-7.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>rangiSari</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/Hit the first case.jpg" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Hit- The First Case</p>
+					</div>
+					</div>
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			Top Charts
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/TC-1.webp" /> </div>
+			  <div class="card_title title-white">
+				<p>Hindi Top 50</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/TC-2.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Punjabi Top 50</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/TC-3.webp" />
+				</div>
+				<div class="card_title">
+				  <p>International Top 50</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/TC-10.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>EDM Top 30</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/TC-10.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>EDM Top 30</p>
+					</div>
+					</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/TC-4.webp" /> </div>
+			  <div class="card_title title-white">
+				<p>Romance Top 50</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/TC-5.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Romance Top 50</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/TC-7.webp" />
+				</div>
+				<div class="card_title">
+				  <p>Dance Top 50</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/TC-8.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Lata Mang. Top 50</p>
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/TC-8.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Lata Mang. Top 50</p>
+					</div>
+					</div>
+			  
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			Top Playlists
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/TPL-1.webp" /> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/TPL-2.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/TPL-3.webp" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/TPL-4.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/TPL-4.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <!-- <p>Card Title</p> -->
+					</div>
+					</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/TPL-5.webp" /> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/TPL-6.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/TPL-7.webp" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/TPL-8.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/TPL-8.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <!-- <p>Card Title</p> -->
+					</div>
+					</div>
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			Popular in Hindi
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/H-1.webp" /> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/H-2.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/H-3.webp" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/H-4.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/H-4.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <!-- <p>Card Title</p> -->
+					</div>
+					</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/H-5.webp" /> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/H-6.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/H-7.webp" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/H-8.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/H-8.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <!-- <p>Card Title</p> -->
+					</div>
+					</div>
+			  
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			New Releases
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/NL-1.webp" /> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/NL-2.jpg" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/NL-3.jpg" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/NL-4.jpg" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/NL-4.jpg" />
+					  </div>
+					<div class="card_title title-black">
+					  <!-- <p>Card Title</p> -->
+					</div>
+					</div>
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/NL-5.jpg" /> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/NL-6.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/NL-7.jpg" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/NL-8.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/NL-8.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <!-- <p>Card Title</p> -->
+					</div>
+					</div>
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			Bhakti
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/B-1.webp" /> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/B-2.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/B-3.webp" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/B-4.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/B-4.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <!-- <p>Card Title</p> -->
+					</div>
+					</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/B-5.webp" /> </div>
+			  <div class="card_title title-white">
+				<!-- <p>Card Title</p> -->
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/B-6.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/B-7.webp" />
+				</div>
+				<div class="card_title">
+				  <!-- <p>Card Title</p> -->
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/B-8.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <!-- <p>Card Title</p> -->
+				</div>
+				</div>
+				<div class="card 5">
+					<div class="card_image">
+					  <img src="image/B-8.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <!-- <p>Card Title</p> -->
+					</div>
+					</div>
+			  
+        </div>
+	</section>
+	<section class="home">
+		<div class="text">
+			Radio
+			<div class="count">
+				<button type="button" class="btn">View all
+				</button>
+			</div>
+		</div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/R1.webp" /> </div>
+			  <div class="card_title title-white">
+				<p>Meethi Mirchi Radio</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/R2.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Punjabi Mirchi</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/R3.webp" />
+				</div>
+				<div class="card_title">
+				  <p>Mirchi Indies</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/R4.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Love Hits</p>
+				</div>
+				</div>
+				<div class="card 4">
+					<div class="card_image">
+					  <img src="image/R5.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>Morning Fix</p>
+					</div>
+					</div>
+			  
+        </div>
+		<div class="cards-list">
+  
+			<div class="card 1">
+			  <div class="card_image"> <img src="image/R6.webp" /> </div>
+			  <div class="card_title title-white">
+				<p>90s & 2000s (Bollywood)</p>
+			  </div>
+			</div>
+			<div class="card 2">
+				<div class="card_image">
+				  <img src="image/R7.webp" />
+				  </div>
+				<div class="card_title title-white">
+				  <p>Rahman Hits</p>
+				</div>
+			  </div>
+			  <div class="card 3">
+				<div class="card_image">
+				  <img src="image/R8.webp" />
+				</div>
+				<div class="card_title">
+				  <p>Sonu Nigam Hits</p>
+				</div>
+			  </div>
+			  <div class="card 4">
+				<div class="card_image">
+				  <img src="image/R9.webp" />
+				  </div>
+				<div class="card_title title-black">
+				  <p>Rahman Radio</p>
+				</div>
+				</div>
+				<div class="card 4">
+					<div class="card_image">
+					  <img src="image/R10.webp" />
+					  </div>
+					<div class="card_title title-black">
+					  <p>The New Generation</p>
+					</div>
+					</div>
+			  
+        </div>
+	</section>
+
+	<script src="script.js"></script>
+	<script src="card.js"></script>
+</body>
+</html>

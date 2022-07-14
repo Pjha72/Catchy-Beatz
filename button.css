@@ -1,0 +1,26 @@
+
+.count {
+	/* height: 90vh; */
+	width: 100%;
+	/* background: #ebeef1; */
+	display: flex;
+    
+	/* align-items: center;
+	justify-content: center; */
+	
+}
+button{
+	font-size: 22px;
+	font-weight: 500;
+	padding: 20px;
+	margin: 30px;
+	width: 200px;
+	background: #ebeef1;
+	cursor: pointer;
+	border: none;
+	border-radius: 50px;
+	color: #00a037;
+	box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+	-10px -10px 10px -1px rgba(255,255,255,0.70);
+    margin-left: 80%;
+}
