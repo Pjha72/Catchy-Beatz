@@ -100,10 +100,10 @@ else {
     // $email_pass = mysqli_fetch_assoc($query);
     // $_SESSION['id'] = $email_pass['id'];
     // header('location:../Gaming Website/index.php');
+    echo "LOGIN WAS SUCCESFULL";
     ?>
     <script>
-        // location.replace("../Gaming Website/index.php");
-        echo "LOGIN WAS SUCCESFULL";
+        location.replace("../index.html");
     </script>
     <?php
 }
