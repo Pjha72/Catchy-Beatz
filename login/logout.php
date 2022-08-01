@@ -10,7 +10,7 @@ session_destroy();
 // header('location:login.php');
 ?>
 <script>
-    location.replace("Gaming Website/index.php");
+    location.replace("../index.html");
 </script>
 <?php
 

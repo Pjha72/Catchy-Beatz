@@ -21,7 +21,7 @@ session_start();
         $mobile     =  mysqli_real_escape_string($con, $_POST['mobile']);
         $password   =  mysqli_real_escape_string($con, $_POST['password']);
         $cpassword  =  mysqli_real_escape_string($con, $_POST['cpassword']);
-        
+
         $pass = password_hash($password, PASSWORD_BCRYPT);
         $cpass = password_hash($cpassword, PASSWORD_BCRYPT);
 
@@ -29,7 +29,8 @@ session_start();
         $query = mysqli_query($con, $emailquery);
         $emailcount = mysqli_num_rows($query);
         if ($emailcount > 0) {
-            ?>
+            // echo "email already exists";
+    ?>
             <script>
                 alert("Email already exists");
             </script>
@@ -37,19 +38,19 @@ session_start();
         } else {
             if ($password === $cpassword) {
 
-                $insertquery = "insert into registeration(username, email, mobile, password, cpassword) values('$username','$email','$mobile','$pass','$cpass')";
+                $insertquery = "insert into registration(username, email, mobile, password, cpassword) values('$username','$email','$mobile','$pass','$cpass')";
 
                 $iquery = mysqli_query($con, $insertquery);
 
                 if (!$iquery) {
-                    echo "Not Inserted";
+                    echo "Not Inserteddd";
                 } else {
                     echo "Inserted Succesfull";
-            // ?>
-            //         <script>
-                        location.replace("login.html");
-            //         </script>
-            //     <?php
+            ?>
+                    <script>
+                        location.replace("login.php");
+                    </script>
+                <?php
                     // header('location:login.php');
                 }
             } else {
@@ -108,7 +109,7 @@ session_start();
                     <button type="submit" name="submit" class="btn
                     btn-primary btn-block"> Create Account </button>
                 </div><!-- form-group// -->
-                <p class="text-center">Have an account? <a href="login.html">Log In</a> </p>
+                <p class="text-center">Have an account? <a href="login.php">Log In</a> </p>
             </form>
         </article>
         

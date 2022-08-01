@@ -102,8 +102,10 @@ else {
     // header('location:../Gaming Website/index.php');
     echo "LOGIN WAS SUCCESFULL";
     ?>
+    
     <script>
         location.replace("../index.html");
+        
     </script>
     <?php
 }

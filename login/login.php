@@ -51,11 +51,15 @@ session_start();
                 // header('location:home.php')
     ?>
                 <script>
-                    // location.replace("Gaming Website/index.php");
+                    location.replace("../index.html");
                 </script>
             <?php
             } else {
-                echo "Password Incorrect\nPlease check your password";
+                ?>
+                <script>
+                alert( "Password Incorrect\nPlease check your password");
+                </script>
+            <?php
             }
         } else {
             ?>
@@ -73,7 +77,7 @@ session_start();
             <h4 class="card-title mt-3 text-center">Create Account</h4>
             <p class="text-center">Get started with your free account</p>
             <p>
-                <a href="" class="btn btn-block btn-gmail"> <i class="fa fa-google"></i> Login via Gmail</a> <a href="" class="btn btn-block btn-facebook"> <i class="fa fa-facebook-f"></i> Login via facebook</a>
+                <a href="../SignInWithGoogle/index.php" class="btn btn-block btn-gmail"> <i class="fa fa-google"></i> Login via Gmail</a> <a href="" class="btn btn-block btn-facebook"> <i class="fa fa-facebook-f"></i> Login via facebook</a>
             </p>
             <p class="divider-text">
                 <span class="bg-light">OR</span>
@@ -97,9 +101,9 @@ session_start();
                     <button type="submit" name="submit" class="btn btn-primary btn-block" style="width: 100%;"> Login Now </button>
                 </div>
                 <!-- form-group//-->
-                <p class="text-center">Not have a account? <a href="regis.php">Create Account Now!!!</a> </p>
+                <p class="text-center">Not have a account? <a href="registeration.php">Create Account Now!!!</a> </p>
                 <p class="text-center">Forgot Passoword?? <a href="forgot3.php">CLick here to reset your password</a> </p>
-                <p class="text-center">Back To <a href="Gaming Website\index.php">Home Page</a> </p>
+                <p class="text-center">Back To <a href="..\index.html">Home Page</a> </p>
             </form>
         </article>
         
