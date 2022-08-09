@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         var search = $('#search').val()
 
-        videoSearch(API_KEY, search, 9)
+        videoSearch(API_KEY, search, 12)
     })
 
     function videoSearch(key, search, maxResults) {
