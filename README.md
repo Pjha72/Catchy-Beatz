@@ -1,4 +1,4 @@
-# PlayWithMusic
+# Catchy-Beatz
 
 Contributors:
 
