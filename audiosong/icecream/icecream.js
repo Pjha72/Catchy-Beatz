@@ -25,7 +25,7 @@ const music_list = [
         img : 'icecream.jpg',
         name : 'IceCream',
         artist : 'Selena Gomez',
-        music : 'IceCream.mp3'
+        music : 'icecream.mp3'
     }
     // ,
     // {
