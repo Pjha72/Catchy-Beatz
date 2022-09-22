@@ -71,8 +71,6 @@ body {
     .container {
         max-width: 540px;
     }
-    
-    
 }
 
 @media (max-width:1024px) {
