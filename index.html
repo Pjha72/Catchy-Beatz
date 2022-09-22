@@ -1,783 +1,929 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Catchy Beatz</title>
-	<!-- favicon -->
-	<link rel="icon" type="logo" href="image/Catchy Beatz.webp">
-	<link rel="stylesheet" href="style.css">
-	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="card.css">
-</head>
-<body>
-	<!-- Nav Bar -->
-	<!-- 1.logo
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catchy Beatz</title>
+    <!-- favicon -->
+    <link rel="icon" type="logo" href="image/Catchy Beatz.webp" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <!-- 1.logo
 	2.name
 	3.home
 	4.search
 	5.bell icon
 	6.profile -->
-	<nav class="sidebar close">
-		<header>
-			<div class="image-text">
-				<span class="image">
-					<img src="image/Catchy Beatz.webp" alt="logo">
-				</span>
-				<div class="text header-text">
-					<span class="name">Catchy Beatz</span>
-					<span class="profession">Music</span>
-				</div>
-			</div>
-			<i class='bx bx-chevron-right toggle'></i>
-		</header>
-		<div class="menu-bar">
-			<div class="menu">
-				<li class="search-box">
-					<i class='bx bx-search icon' ></i>
-						<input type="text" placeholder="Search...">
-						<!-- <div class="search_result">
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="image/Catchy Beatz.webp" alt="logo" />
+          </span>
+          <div class="text header-text">
+            <span class="name">Catchy Beatz</span>
+            <span class="profession">Music</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input
+              type="text"
+              placeholder="Search..."
+              id="myInput"
+              onkeyup="myFunction()"
+            />
+            <!-- <div class="search_result">
 							<a href="#" class="card">
 								<img src="Bad boy.jpg" alt="">
 								<div class="content"></div>
 							</a>
 							<a href="#" class="card"></a> -->
-					
-						<!-- </div> -->
-				</li>
-				<ul class="menu-links">
-					<li class="nav-links">
-						<a href="index.html">
-							<i class='bx bx-home-alt icon' ></i>
-							<span class="text nav-text">Dashboard</span>
-						</a>
-					</li>
-					<li class="nav-links">
-						<a href="#">
-							<i class='bx bx-bell icon' ></i>
-							<span class="text nav-text">Notification</span>
-						</a>
-					</li>
-					<li class="nav-links">
-						<a href="NewRelease.html">
-							<i class='bx bx-message-alt-add icon' ></i>
-							<span class="text nav-text">New Release</span>
-						</a>
-					</li>
-					<li class="nav-links">
-						<a href="YoutubeVideoPlay">
-							<i class='bx bxl-spring-boot icon' ></i>
-							<span class="text nav-text">Listen By Video</span>
-						</a>
-					</li>
-					<li class="nav-links">
-						<a href="ArtistSection/ArtsitForYou.html">
-							<i class='bx bx-user icon' ></i>
-							<span class="text nav-text">Artist</span>
-						</a>
-					</li>
-					<li class="nav-links">
-						<a href="TopPlaylist.html">
-							<i class='bx bx-paperclip icon' ></i>
-							<span class="text nav-text">Top Playlist</span>
-						</a>
-					</li>
-					<li class="nav-links">
-						<a href="#">
-							<i class='bx bx-heart icon'></i>
-							<span class="text nav-text">Likes</span>
-						</a>
-					</li>
-				</ul>
-			</div>
 
-			<div class="bottom-content">
-				<li class="">
-					<a href="login/login.php" >
-						<i class='bx bx-log-out icon' target="_blank"></i>
-						<span class="text nav-text" >Logout</span>
-					</a>
-				</li>
-				<li class="mode">
-					<div class="moon-sun">
-						<i class='bx bx-moon icon moon'></i>
-						<i class='bx bx-sun icon sun'></i>
-					</div>
-					<span class="mode-text text">
-						Dark Mode
-					</span>
-
-					<div class="toggle-switch">
-						<span class="switch"></span>
-					</div>
-				</li>
-			</div>
-		</div>
-
-		
-	</nav>
-	<section class="home">
-			<div class="text">
-				All Time Favourite
-				<div class="count">
-					<button type="button" class="btn">View all
-					</button>
-				</div>
-			</div>
-			<div class="cards-list">
-
-				<div class="card 1">
-					<div class="card_image"> <a href="audiosong/stay/stay.html"><img
-								style="width: 200px; height: 200px;" src="audiosong/stay/stay.png" />
-						</a> </div>
-					<div class="card_title title-white">
-						<p>Stay</p>
-					</div>
-				</div>
-				<div class="card 2">
-					<div class="card_image">
-						<a href="audiosong/dynamite/dynamite.html"><img style="width: 200px; height: 200px;" src="audiosong/dynamite/dynamite.jpg" /> </a>
-					</div>
-					<div class="card_title title-white">
-						<p>Dynamite</p>
-					</div>
-				</div>
-				<div class="card 3">
-					<div class="card_image">
-						<a href="audiosong/TT/TT.html"><img  style="width: 200px; height: 200px;" src="audiosong/TT/TT.jpg" /> </a> 
-					</div>
-					<div class="card_title">
-						<p>Twice TT</p>
-					</div>
-				</div>
-				<div class="card 4">
-					<div class="card_image">
-						<img src="image/mercy.jpg" />
-					</div>
-					<div class="card_title title-black">
-						<p>Mercy</p>
-					</div>
-				</div>
-				<div class="card 4">
-					<div class="card_image">
-						<a href="audiosong/icecream/icecream.html"><img  style="width: 200px; height: 200px;" src="audiosong/icecream/icecream.jpg" /> </a>
-					</div>
-					<div class="card_title title-black">
-						<p>Icecream</p>
-					</div>
-				</div>
-
-			</div>
-			<div class="cards-list">
-
-				<div class="card 1">
-					<div class="card_image"> <img src="image/humma.jpg" /> </div>
-					<div class="card_title title-white">
-						<p>The Humma</p>
-					</div>
-				</div>
-				<div class="card 2">
-					<div class="card_image">
-						<img src="https://i.ytimg.com/vi/ypY0r9xUtME/maxresdefault.jpg" />
-					</div>
-					<div class="card_title title-white">
-						<p>Dil Galti krbaitha</p>
-					</div>
-				</div>
-				<div class="card 3">
-					<div class="card_image">
-						<img src="image/snam.jpg" />
-					</div>
-					<div class="card_title">
-						<p>Snam re</p>
-					</div>
-				</div>
-				<div class="card 4">
-					<div class="card_image">
-						<img src="https://i.ytimg.com/vi/v2tXijdT56o/maxresdefault.jpg" />
-					</div>
-					<div class="card_title title-black">
-						<p>Lagdi Lahore di</p>
-					</div>
-				</div>
-				<div class="card 4">
-					<div class="card_image">
-						<img src="image/BB2.jpg" />
-					</div>
-					<div class="card_title title-black">
-						<p>Bhool Bhulaiyaa</p>
-					</div>
-				</div>
-
-			</div>
-
-		</section>
-
-
-	<section class="home">
-		<div class="text">
-			BTS 
-			<div class="count">
-				<button type="button" class="btn">View all
-				</button>
-			</div>
-		</div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="http://modernseoul.files.wordpress.com/2014/02/bts-boy-in-luv-dance.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>Boy In Luv</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://image.kpopmap.com/2020/06/bts-save-me-cover.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Save Me</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/hmE9f-TEutc/maxresdefault.jpg" />
-				</div>
-				<div class="card_title">
-				  <p>Blood Sweat & Tears</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://townsquare.media/site/252/files/2017/11/MC-2.jpg?w=980&q=75" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>MIC DROP</p>
-				</div>
-				</div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://0.soompi.io/wp-content/uploads/2021/09/07133418/bts1.jpeg?s=900x600&e=t" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>Fake Love</p>
-				</div>
-				</div>
-			  
-        </div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://i.ytimg.com/vi/gdZLi9oWNZg/maxresdefault.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>Dynamite</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://headlineplanet.com/home/wp-content/uploads/2020/10/Savage-Love-Remix.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Savage Love</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/XsX3ATc3FbA/maxresdefault.jpg" />
-				</div>
-				<div class="card_title">
-				  <p>Boy With Luv</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://media.allure.com/photos/5b803fa5934dc30def26a6d3/2:1/w_2392,h_1196,c_limit/BTS%20Idol.png" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>Idol</p>
-				</div>
-				</div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/RvcP6V4h_q4/mqdefault.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>Life Goes On</p>
-				</div>
-				</div>
-			  
+            <!-- </div> -->
+          </li>
+          <ul class="menu-links">
+            <li class="nav-links">
+              <a href="index.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="#">
+                <i class="bx bx-bell icon"></i>
+                <span class="text nav-text">Notification</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="NewRelease.html">
+                <i class="bx bx-message-alt-add icon"></i>
+                <span class="text nav-text">New Release</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="YoutubeVideoPlay">
+                <i class="bx bxl-spring-boot icon"></i>
+                <span class="text nav-text">Listen By Video</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="ArtistSection/ArtsitForYou.html">
+                <i class="bx bx-user icon"></i>
+                <span class="text nav-text">Artist</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="TopPlaylist.html">
+                <i class="bx bx-paperclip icon"></i>
+                <span class="text nav-text">Top Playlist</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="#">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Likes</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
-	</section>
-	<section class="home">
-		<div class="text">
-			Korean
-			<div class="count">
-				<button type="button" class="btn">View all
-				</button>
-			</div>
-		</div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://kpopreviewed.files.wordpress.com/2016/11/twicett.png?w=1200" /> </div>
-			  <div class="card_title title-white">
-				<p>TT</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://kingchoice.me/media/CACHE/images/9703d23fe0966bfaf34e441e27a0a672_k9BXTpL/0b7351223c087b4767d31fa14e925b8b.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Cheer Up</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://thebiaslistcom.files.wordpress.com/2020/06/twice-more-more.jpg" />
-				</div>
-				<div class="card_title">
-				  <p>More More</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="http://images.gmanews.tv/webpics/2020/10/twice_cant_stop_me_2020_10_27_08_40_38.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>I Can't Stop Me</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://6.viki.io/image/419ec166557e4d02b831a5aa0ec5caaf.jpeg?s=900x600&e=t" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Blueming</p>
-					</div>
-					</div>
-			  
-        </div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://pbs.twimg.com/media/FDJJdh-UYAQVu9B.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>Bad Boy</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://images.indianexpress.com/2020/08/ice-cream.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Icecream</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://6.viki.io/image/62de8f5f84fd4c05be19c3971d09ee6e/dummy.jpeg?s=900x600&e=t" />
-				</div>
-				<div class="card_title">
-				  <p>Hey You Like That</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://6.viki.io/image/4066d72927a7427a99ce3da96f35f956/dummy.jpeg?" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>Love Shot</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAdiVQe-PXT4NETR9sJPMtK4_ePRbYi0A4ng&usqp=CAU" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Momoland</p>
-					</div>
-					</div>
-			  
-        </div>
-	</section>
-	<section class="home">
-		<div class="text">
-			Hollywood 
-			<div class="count">
-				<button type="button" class="btn">View all
-				</button>
-			</div>
-		</div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuDoDKrjL_DfWtFmtx28itNCnXL6w87dUBQA&usqp=CAU" /> </div>
-			  <div class="card_title title-white">
-				<p>Let Me Love You</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://www.billboard.com/wp-content/uploads/media/Justin-Bieber-Baby-screenshot-2019-billboard-1500.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Baby</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg" />
-				</div>
-				<div class="card_title">
-				  <p>Stay</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/d_HlPboLRL8/maxresdefault.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>Aurora-Runaway</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://1.bp.blogspot.com/-neC0NjkYC-M/X41qkdR1bbI/AAAAAAAAJBA/K7R3Lqx4yzUT88R1vOvOSu_zIoD0sk0zACLcBGAsYHQ/s0/lovely%2B-%2Bbillie%2Beilish%2Band%2Bkhalid.webp" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Lovely</p>
-					</div>
-					</div>
-			  
-        </div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://i.ytimg.com/vi/CTmKrwFu7wg/maxresdefault.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>Jalebi</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://i.scdn.co/image/ab67616d00001e02d7bdea3b1f6d05877fb48f38" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Belly Dancer</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/wWDUMfL2rV8/mqdefault.jpg" />
-				</div>
-				<div class="card_title">
-				  <p>I Love Cheapthrills</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://www.india.com/wp-content/uploads/2016/01/CZ89pTXVIAE6NrX.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>Hymn For the Weekend</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://i.ytimg.com/vi/aJOTlE1K90k/mqdefault.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Maroon 5</p>
-					</div>
-					</div>
-			  
-        </div>
-	</section>
+        <div class="bottom-content">
+          <li class="">
+            <a href="login/login.php">
+              <i class="bx bx-log-out icon" target="_blank"></i>
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text"> Dark Mode </span>
 
-	<section class="home">
-		<div class="text">
-			Bollywood
-			<div class="count">
-				<button type="button" class="btn">View all
-				</button>
-			</div>
-		</div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://i.ytimg.com/vi/3Dg006VuOMk/maxresdefault.jpg"/> </div>
-			  <div class="card_title title-white">
-				<p>Tujhe Kitna Chhahne Lage</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/dSDFwAfqfxc/maxresdefault.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>High Rated</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://www.hinditracks.in/wp-content/uploads/2018/07/PANIYON-SA.jpg" />
-				</div>
-				<div class="card_title">
-				  <p>Paniyosa</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://images.hungama.com/c/1/95c/969/37334386/37334386_300x300.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>Naino ne Bandhi</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://www.jarzee.in/resource/images/soch-na-sake.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Soch na Sake </p>
-					</div>
-				</div>
-			  
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
         </div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://i.ytimg.com/vi/ZWAGn4yyRMM/maxresdefault.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>Teri Meri Kahani</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/TX8jVdTmoy0/maxresdefault.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				   <p>ohh tere sang yaara</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/FxAG_11PzCk/maxresdefault.jpg" />
-				</div>
-				<div class="card_title">
-				  <p>Teri Galliyaan</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://m.media-amazon.com/images/M/MV5BYjRiNjQ0YzctOTQ4YS00OGI0LTg2ZGMtNGQ0Yjg2YjhjZTA1XkEyXkFqcGdeQXVyNjE1OTQ0NjA@._V1_.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				   <p>Vee Mahi</p>
-				</div>
-			   </div>
-			   <div class="card 5">
-				<div class="card_image">
-				  <img src="https://static.toiimg.com/photo/msid-92802278/92802278.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				   <p>Kesariya</p>
-				</div>
-			   </div>
-			  
+      </div>
+    </nav>
+
+    <section id="myICONS">
+      <section class="home">
+        <div class="text">
+          All Time Favourite
+          <div class="count">
+            <button type="button" class="btn">View all</button>
+          </div>
         </div>
-	</section>
-	<section class="home">
-		<div class="text">
-			Hit Songs
-			<div class="count">
-				<button type="button" class="btn"><a href="ArtistSection/ArtsitForYou.html" target = "_blank" style="text-decoration: none;">View all</a></button>
-				
-			</div>
-		</div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image">
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2yZmcbV5uQ54BiUsqYTC4RVLBvZA_utDwg&usqp=CAU" />
-			  </div>
-			  <div class="card_title title-white">
-				<a href="Artist/Arijit.html" target="_blank" style="text-decoration: none; color : #ebeef1"  > <p>Bhool Bhulaiya</p></a>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqjDKDo2h3vXiPEpu_YXer6TH401giQl2Wbw&usqp=CAU" />
-				  </div>
-				<div class="card_title title-white">
-					<a href="Artist/Arijit.html" target="_blank"style="text-decoration: none; color : #ebeef1"> <p>Lega Re</p></a>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://filmfare.wwmindia.com/content/2021/nov/rrr21636549776.jpg" />
-				</div>
-				<div class="card_title">
-				  <a href="Artist/Arijit.html" target="_blank"style="text-decoration: none; color : #ebeef1"> <p>Nacho Nacho</p></a>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/ELhODBCcojA/maxresdefault.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <a href="Artist/Arijit.html" target="_blank"style="text-decoration: none; color : #ebeef1"> <p>Kaise Hua</p></a>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2019/02/coca-cola-1549263863.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <a href="Artist/Arijit.html" target="_blank" style="text-decoration: none; color : #ebeef1"> <p>Coca Cola</p></a>
-					</div>
-				</div>
-			  
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <a href="audiosong/stay/stay.html"
+                ><img
+                  style="width: 200px; height: 200px"
+                  src="audiosong/stay/stay.png"
+                />
+              </a>
+            </div>
+            <div class="card_title title-white">
+              <p>Stay</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <a href="audiosong/dynamite/dynamite.html"
+                ><img
+                  style="width: 200px; height: 200px"
+                  src="audiosong/dynamite/dynamite.jpg"
+                />
+              </a>
+            </div>
+            <div class="card_title title-white">
+              <p>Dynamite</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <a href="audiosong/TT/TT.html"
+                ><img
+                  style="width: 200px; height: 200px"
+                  src="audiosong/TT/TT.jpg"
+                />
+              </a>
+            </div>
+            <div class="card_title">
+              <p>Twice TT</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="image/mercy.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Mercy</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <a href="audiosong/icecream/icecream.html"
+                ><img
+                  style="width: 200px; height: 200px"
+                  src="audiosong/icecream/icecream.jpg"
+                />
+              </a>
+            </div>
+            <div class="card_title title-black">
+              <p>Icecream</p>
+            </div>
+          </div>
         </div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://i.ytimg.com/vi/HwveQEDuuk4/maxresdefault.jpg" /> </div>
-			  <div class="card_title title-white">
-				<a href="Artist/Arijit.html" target="_blank"style="text-decoration: none; color : #ebeef1"> <p>Rataan Lambiyan</p></a>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Dilbar_cover_art.jpeg/220px-Dilbar_cover_art.jpeg" />
-				  </div>
-				<div class="card_title title-white">
-				  <a href="Artist/Arijit.html" target="_blank"style="text-decoration: none; color : #ebeef1"><p>Dilbar</p></a>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/IUvPVi-D7ho/maxresdefault.jpg" />
-				</div>
-				<div class="card_title">
-				  <a href="Artist/Arijit.html" target="_blank"style="text-decoration: none; color : #ebeef1"> <p>Saki Saki</p></a>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://i.scdn.co/image/ab67616d0000b273e7f1ff44b74df429307f4164" />
-				  </div>
-				<div class="card_title title-black">
-				  <a href="Artist/Arijit.html" target="_blank" style="text-decoration: none; color : #ebeef1"> <p>Tu chahiye</p></a>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://sngprecdnems05.cdnsrv.jio.com/c.saavncdn.com/401/Loveyatri-A-Journey-Of-Love-Hindi-2018-20181003-500x500.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <a href="Artist/Arijit.html" target="_blank"style="text-decoration: none; color : #ebeef1"> <p>chogada </p></a>
-					</div>
-				</div>
-			  
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image"><img src="image/humma.jpg" /></div>
+            <div class="card_title title-white">
+              <p>The Humma</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/ypY0r9xUtME/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Dil Galti krbaitha</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="image/snam.jpg" />
+            </div>
+            <div class="card_title">
+              <p>Snam re</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/v2tXijdT56o/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Lagdi Lahore di</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="image/BB2.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Bhool Bhulaiyaa</p>
+            </div>
+          </div>
         </div>
-	</section>
-	<section class="home">
-		<div class="text">
-			Old Songs
-			<div class="count">
-				<button type="button" class="btn">View all
-				</button>
-			</div>
-		</div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://i.ytimg.com/vi/I5t894l5b1w/sddefault.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>gulabi aakhen</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/zlBg1pU4t24/hqdefault.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Maine Pucha Chandse</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://1.bp.blogspot.com/-84m0RS-mWRc/YIFdkP9QqPI/AAAAAAAAE8U/PsPY08s13q4-dJxlfgjb44CQfVxp-V0QACLcBGAsYHQ/s1280/Kya-Hua-Tera-Wada-Lyrics-in-Hindi-1280x720.jpg" />
-				</div>
-				<div class="card_title">
-				  <p>Tera Vada</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://i0.wp.com/99lyricstore.com/wp-content/uploads/2021/04/Likhe2BJo2Bkhat2BTujhe2BHindi2BLove2BSong2BLyrics2BMohammad2BRafi.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>likhe jo Khatt</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://sargamhub.com/wp-content/uploads/2021/07/Tere-Jaisa-Yaar-Kahan_1.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Yara Teri yaari</p>
-					</div>
-					</div>
-			  
+      </section>
+
+      <section class="home">
+        <div class="text">
+          BTS
+          <div class="count">
+            <button type="button" class="btn">View all</button>
+          </div>
         </div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://i.ytimg.com/vi/oXLzfldeDcM/maxresdefault.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>Pyaar hua Ikrar hua </p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/fTauOK8J-U8/maxresdefault.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Ek Ladki ko dekha</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/9mZugcDsM4Y/maxresdefault.jpg" />
-				</div>
-				<div class="card_title">
-				  <p>Gali mai Aaj Chand</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/nvilopNpLSY/maxresdefault.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>Tumjhse dekhte hi</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://i.ytimg.com/vi/yBuz0eWC598/maxresdefault.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Pyaar kiya toh drna ky</p>
-					</div>
-					</div>
-			  
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img
+                src="http://modernseoul.files.wordpress.com/2014/02/bts-boy-in-luv-dance.jpg"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>Boy In Luv</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img
+                src="https://image.kpopmap.com/2020/06/bts-save-me-cover.jpg"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>Save Me</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/hmE9f-TEutc/maxresdefault.jpg" />
+            </div>
+            <div class="card_title">
+              <p>Blood Sweat & Tears</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://townsquare.media/site/252/files/2017/11/MC-2.jpg?w=980&q=75"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>MIC DROP</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://0.soompi.io/wp-content/uploads/2021/09/07133418/bts1.jpeg?s=900x600&e=t"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Fake Love</p>
+            </div>
+          </div>
         </div>
-	</section>
-	<!-- <section class="home">
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/gdZLi9oWNZg/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Dynamite</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img
+                src="https://headlineplanet.com/home/wp-content/uploads/2020/10/Savage-Love-Remix.jpg"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>Savage Love</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/XsX3ATc3FbA/maxresdefault.jpg" />
+            </div>
+            <div class="card_title">
+              <p>Boy With Luv</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://media.allure.com/photos/5b803fa5934dc30def26a6d3/2:1/w_2392,h_1196,c_limit/BTS%20Idol.png"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Idol</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/RvcP6V4h_q4/mqdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Life Goes On</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home">
+        <div class="text">
+          Korean
+          <div class="count">
+            <button type="button" class="btn">View all</button>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img
+                src="https://kpopreviewed.files.wordpress.com/2016/11/twicett.png?w=1200"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>TT</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img
+                src="https://kingchoice.me/media/CACHE/images/9703d23fe0966bfaf34e441e27a0a672_k9BXTpL/0b7351223c087b4767d31fa14e925b8b.jpg"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>Cheer Up</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img
+                src="https://thebiaslistcom.files.wordpress.com/2020/06/twice-more-more.jpg"
+              />
+            </div>
+            <div class="card_title">
+              <p>More More</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="http://images.gmanews.tv/webpics/2020/10/twice_cant_stop_me_2020_10_27_08_40_38.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>I Can't Stop Me</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img
+                src="https://6.viki.io/image/419ec166557e4d02b831a5aa0ec5caaf.jpeg?s=900x600&e=t"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Blueming</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img src="https://pbs.twimg.com/media/FDJJdh-UYAQVu9B.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Bad Boy</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img
+                src="https://images.indianexpress.com/2020/08/ice-cream.jpg"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>Icecream</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img
+                src="https://6.viki.io/image/62de8f5f84fd4c05be19c3971d09ee6e/dummy.jpeg?s=900x600&e=t"
+              />
+            </div>
+            <div class="card_title">
+              <p>Hey You Like That</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://6.viki.io/image/4066d72927a7427a99ce3da96f35f956/dummy.jpeg?"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Love Shot</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAdiVQe-PXT4NETR9sJPMtK4_ePRbYi0A4ng&usqp=CAU"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Momoland</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home">
+        <div class="text">
+          Hollywood
+          <div class="count">
+            <button type="button" class="btn">View all</button>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuDoDKrjL_DfWtFmtx28itNCnXL6w87dUBQA&usqp=CAU"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>Let Me Love You</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img
+                src="https://www.billboard.com/wp-content/uploads/media/Justin-Bieber-Baby-screenshot-2019-billboard-1500.jpg"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>Baby</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg" />
+            </div>
+            <div class="card_title">
+              <p>Stay</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/d_HlPboLRL8/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Aurora-Runaway</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img
+                src="https://1.bp.blogspot.com/-neC0NjkYC-M/X41qkdR1bbI/AAAAAAAAJBA/K7R3Lqx4yzUT88R1vOvOSu_zIoD0sk0zACLcBGAsYHQ/s0/lovely%2B-%2Bbillie%2Beilish%2Band%2Bkhalid.webp"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Lovely</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/CTmKrwFu7wg/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Jalebi</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02d7bdea3b1f6d05877fb48f38"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>Belly Dancer</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/wWDUMfL2rV8/mqdefault.jpg" />
+            </div>
+            <div class="card_title">
+              <p>I Love Cheapthrills</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://www.india.com/wp-content/uploads/2016/01/CZ89pTXVIAE6NrX.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Hymn For the Weekend</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/aJOTlE1K90k/mqdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Maroon 5</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home">
+        <div class="text">
+          Bollywood
+          <div class="count">
+            <button type="button" class="btn">View all</button>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/3Dg006VuOMk/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Tujhe Kitna Chhahne Lage</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/dSDFwAfqfxc/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>High Rated</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img
+                src="https://www.hinditracks.in/wp-content/uploads/2018/07/PANIYON-SA.jpg"
+              />
+            </div>
+            <div class="card_title">
+              <p>Paniyosa</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://images.hungama.com/c/1/95c/969/37334386/37334386_300x300.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Naino ne Bandhi</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img
+                src="https://www.jarzee.in/resource/images/soch-na-sake.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Soch na Sake</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/ZWAGn4yyRMM/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Teri Meri Kahani</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/TX8jVdTmoy0/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>ohh tere sang yaara</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/FxAG_11PzCk/maxresdefault.jpg" />
+            </div>
+            <div class="card_title">
+              <p>Teri Galliyaan</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYjRiNjQ0YzctOTQ4YS00OGI0LTg2ZGMtNGQ0Yjg2YjhjZTA1XkEyXkFqcGdeQXVyNjE1OTQ0NjA@._V1_.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Vee Mahi</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img
+                src="https://static.toiimg.com/photo/msid-92802278/92802278.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Kesariya</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home">
+        <div class="text">
+          Hit Songs
+          <div class="count">
+            <button type="button" class="btn">
+              <a
+                href="ArtistSection/ArtsitForYou.html"
+                target="_blank"
+                style="text-decoration: none"
+                >View all</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2yZmcbV5uQ54BiUsqYTC4RVLBvZA_utDwg&usqp=CAU"
+              />
+            </div>
+            <div class="card_title title-white">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+              >
+                <p>Bhool Bhulaiya</p></a
+              >
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqjDKDo2h3vXiPEpu_YXer6TH401giQl2Wbw&usqp=CAU"
+              />
+            </div>
+            <div class="card_title title-white">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+              >
+                <p>Lega Re</p></a
+              >
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img
+                src="https://filmfare.wwmindia.com/content/2021/nov/rrr21636549776.jpg"
+              />
+            </div>
+            <div class="card_title">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+              >
+                <p>Nacho Nacho</p></a
+              >
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/ELhODBCcojA/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+              >
+                <p>Kaise Hua</p></a
+              >
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img
+                src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2019/02/coca-cola-1549263863.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+              >
+                <p>Coca Cola</p></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/HwveQEDuuk4/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+              >
+                <p>Rataan Lambiyan</p></a
+              >
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Dilbar_cover_art.jpeg/220px-Dilbar_cover_art.jpeg"
+              />
+            </div>
+            <div class="card_title title-white">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+                ><p>Dilbar</p></a
+              >
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/IUvPVi-D7ho/maxresdefault.jpg" />
+            </div>
+            <div class="card_title">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+              >
+                <p>Saki Saki</p></a
+              >
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273e7f1ff44b74df429307f4164"
+              />
+            </div>
+            <div class="card_title title-black">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+              >
+                <p>Tu chahiye</p></a
+              >
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img
+                src="https://sngprecdnems05.cdnsrv.jio.com/c.saavncdn.com/401/Loveyatri-A-Journey-Of-Love-Hindi-2018-20181003-500x500.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <a
+                href="Artist/Arijit.html"
+                target="_blank"
+                style="text-decoration: none; color: #ebeef1"
+              >
+                <p>chogada</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home">
+        <div class="text">
+          Old Songs
+          <div class="count">
+            <button type="button" class="btn">View all</button>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/I5t894l5b1w/sddefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>gulabi aakhen</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/zlBg1pU4t24/hqdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Maine Pucha Chandse</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img
+                src="https://1.bp.blogspot.com/-84m0RS-mWRc/YIFdkP9QqPI/AAAAAAAAE8U/PsPY08s13q4-dJxlfgjb44CQfVxp-V0QACLcBGAsYHQ/s1280/Kya-Hua-Tera-Wada-Lyrics-in-Hindi-1280x720.jpg"
+              />
+            </div>
+            <div class="card_title">
+              <p>Tera Vada</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://i0.wp.com/99lyricstore.com/wp-content/uploads/2021/04/Likhe2BJo2Bkhat2BTujhe2BHindi2BLove2BSong2BLyrics2BMohammad2BRafi.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>likhe jo Khatt</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img
+                src="https://sargamhub.com/wp-content/uploads/2021/07/Tere-Jaisa-Yaar-Kahan_1.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>Yara Teri yaari</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/oXLzfldeDcM/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Pyaar hua Ikrar hua</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/fTauOK8J-U8/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Ek Ladki ko dekha</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/9mZugcDsM4Y/maxresdefault.jpg" />
+            </div>
+            <div class="card_title">
+              <p>Gali mai Aaj Chand</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/nvilopNpLSY/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Tumjhse dekhte hi</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/yBuz0eWC598/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Pyaar kiya toh drna ky</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="home">
 		<div class="text">
 			Treading Songs
 			<div class="count">
@@ -1238,100 +1384,105 @@
 					</div>
         </div>
 	</section> -->
-	<section class="home">
-		<div class="text">
-			Patriotic Song
-			<div class="count">
-				<button type="button" class="btn">View all
-				</button>
-			</div>
-		</div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://a10.gaanacdn.com/images/albums/46/3969446/crop_480x480_3969446.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>Namo Namo</p> 
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/BF2EMEoq27U/maxresdefault.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Teri mitti</p> 
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/ZDuO2He5JTQ/hqdefault.jpg" />
-				</div>
-				<div class="card_title">
-				   <p>Mai ek din aunga</p> 
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://www.hinditracks.in/wp-content/uploads/2013/08/maa-tujhe-salam.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>vande mataram</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://i.ytimg.com/vi/BKx_B1VZ2kw/maxresdefault.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Aee vatan</p>
-					</div>
-					</div>
-			  
+      <section class="home">
+        <div class="text">
+          Patriotic Song
+          <div class="count">
+            <button type="button" class="btn">View all</button>
+          </div>
         </div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="https://i.ytimg.com/vi/d6-TlA2MEVI/maxresdefault.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>East or West</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/-5ef7epnR60/mqdefault.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>mere desh ki dharti</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRl6b_PGQEIFEz5x00Ulhpp_GHNcmReorWXg&usqp=CAU" />
-				</div>
-				<div class="card_title">
-				  <p>nanha munna rahi hoon</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="https://i.ytimg.com/vi/DYMFSieP-II/maxresdefault.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>ye desh h veer </p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="https://i.ytimg.com/vi/yLI2k4Ffc8M/mqdefault.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Oh mai na lauta</p> 
-					</div>
-					</div>
-			  
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img
+                src="https://a10.gaanacdn.com/images/albums/46/3969446/crop_480x480_3969446.jpg"
+              />
+            </div>
+            <div class="card_title title-white">
+              <p>Namo Namo</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/BF2EMEoq27U/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Teri mitti</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/ZDuO2He5JTQ/hqdefault.jpg" />
+            </div>
+            <div class="card_title">
+              <p>Mai ek din aunga</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img
+                src="https://www.hinditracks.in/wp-content/uploads/2013/08/maa-tujhe-salam.jpg"
+              />
+            </div>
+            <div class="card_title title-black">
+              <p>vande mataram</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/BKx_B1VZ2kw/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Aee vatan</p>
+            </div>
+          </div>
         </div>
-	</section>
-	<!-- <section class="home">
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/d6-TlA2MEVI/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>East or West</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/-5ef7epnR60/mqdefault.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>mere desh ki dharti</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRl6b_PGQEIFEz5x00Ulhpp_GHNcmReorWXg&usqp=CAU"
+              />
+            </div>
+            <div class="card_title">
+              <p>nanha munna rahi hoon</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/DYMFSieP-II/maxresdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>ye desh h veer</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img src="https://i.ytimg.com/vi/yLI2k4Ffc8M/mqdefault.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Oh mai na lauta</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="home">
 		<div class="text">
 			Radio
 			<div class="count">
@@ -1424,100 +1575,97 @@
 			  
         </div>
 	</section> -->
-	<section class="home">
-		<div class="text">
-			Treading Songs
-			<div class="count">
-				<button type="button" class="btn">View all
-				</button>
-			</div>
-		</div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="image/T-1.jpg" /> </div>
-			  <div class="card_title title-white">
-				<p>Iss Baarish Mein</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="image/TS-1.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Darbadar</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="image/TS-2.webp" />
-				</div>
-				<div class="card_title">
-				  <p>Bhool Bhulaiyaa 2 Title Track</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="image/TS-3.jpg" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>Somebody Like U</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="image/ek 1.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Ek Villain</p>
-					</div>
-					</div>
-			  
+      <section class="home">
+        <div class="text">
+          Treading Songs
+          <div class="count">
+            <button type="button" class="btn">View all</button>
+          </div>
         </div>
-		<div class="cards-list">
-  
-			<div class="card 1">
-			  <div class="card_image"> <img src="image/TS-4.webp" /> </div>
-			  <div class="card_title title-white">
-				<p>Duppata</p>
-			  </div>
-			</div>
-			<div class="card 2">
-				<div class="card_image">
-				  <img src="image/TS-5.jpg" />
-				  </div>
-				<div class="card_title title-white">
-				  <p>Halki Si Barsaat</p>
-				</div>
-			  </div>
-			  <div class="card 3">
-				<div class="card_image">
-				  <img src="image/TS-6.webp" />
-				</div>
-				<div class="card_title">
-				  <p>Hum Nashe Mein Toh Nahi</p>
-				</div>
-			  </div>
-			  <div class="card 4">
-				<div class="card_image">
-				  <img src="image/TS-7.webp" />
-				  </div>
-				<div class="card_title title-black">
-				  <p>rangiSari</p>
-				</div>
-				</div>
-				<div class="card 5">
-					<div class="card_image">
-					  <img src="image/Hit the first case.jpg" />
-					  </div>
-					<div class="card_title title-black">
-					  <p>Hit- The First Case</p>
-					</div>
-					</div>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image"><img src="image/T-1.jpg" /></div>
+            <div class="card_title title-white">
+              <p>Iss Baarish Mein</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="image/TS-1.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Darbadar</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="image/TS-2.webp" />
+            </div>
+            <div class="card_title">
+              <p>Bhool Bhulaiyaa 2 Title Track</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="image/TS-3.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Somebody Like U</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img src="image/ek 1.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Ek Villain</p>
+            </div>
+          </div>
         </div>
-	</section>
+        <div class="cards-list">
+          <div class="card 1">
+            <div class="card_image"><img src="image/TS-4.webp" /></div>
+            <div class="card_title title-white">
+              <p>Duppata</p>
+            </div>
+          </div>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="image/TS-5.jpg" />
+            </div>
+            <div class="card_title title-white">
+              <p>Halki Si Barsaat</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="image/TS-6.webp" />
+            </div>
+            <div class="card_title">
+              <p>Hum Nashe Mein Toh Nahi</p>
+            </div>
+          </div>
+          <div class="card 4">
+            <div class="card_image">
+              <img src="image/TS-7.webp" />
+            </div>
+            <div class="card_title title-black">
+              <p>rangiSari</p>
+            </div>
+          </div>
+          <div class="card 5">
+            <div class="card_image">
+              <img src="image/Hit the first case.jpg" />
+            </div>
+            <div class="card_title title-black">
+              <p>Hit- The First Case</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
 
-	<script src="script.js"></script>
-	<script src="card.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script src="card.js"></script>
+  </body>
 </html>
