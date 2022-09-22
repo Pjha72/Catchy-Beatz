@@ -34,6 +34,7 @@ function myFunction() {
     filter = input.value.toUpperCase();
     icons = document.getElementById("myICONS");
     figure = myICONS.getElementsByClassName("card");
+	TEXT =myICONS.getElementsByClassName("text")
 
     for (i = 0; i < figure.length; i++) {
         a = figure[i].getElementsByClassName("card_title")[0];
@@ -42,6 +43,8 @@ function myFunction() {
             figure[i].style.display = "";
         } else {
             figure[i].style.display = "none";
+			// TEXT[i].style.display = "none";
+
         }
     }
 }
