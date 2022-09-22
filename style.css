@@ -376,7 +376,7 @@ button.btn {
 	transition: var(--tran-02);
 	cursor: pointer;
 } */
-.sidebar.close~.home {
+.sidebar.close~#myICONS .home {
 	left: 88px;
 	width: calc(100% - 88px);
 }
