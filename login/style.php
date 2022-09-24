@@ -88,5 +88,15 @@
         .fa {
             color: white;
         }
+
+
+        a {
+            color: aqua !important;
+            text-decoration: underline !important;
+        }
+
+        a:hover {
+            color: white !important;
+        }
     </style>
 </head>
