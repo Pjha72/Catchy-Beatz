@@ -90,12 +90,12 @@
         }
 
 
-        a {
+        .text-center a {
             color: aqua !important;
             text-decoration: underline !important;
         }
 
-        a:hover {
+        .text-center a:hover {
             color: white !important;
         }
     </style>
