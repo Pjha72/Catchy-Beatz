@@ -13,7 +13,7 @@ session_start();
 <body>
 <?php
     
-    // include '../dbcon.php';
+    include '../dbcon.php';
 
     if (isset($_POST['submit'])) {
         $username   =  mysqli_real_escape_string($con, $_POST['username']);
