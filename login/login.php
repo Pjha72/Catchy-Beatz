@@ -22,7 +22,7 @@ session_start();
 
     <?php
 
-    // include '../dbcon.php';
+    include '../dbcon.php';
     if (isset($_POST['submit'])) {
         $email      =  mysqli_real_escape_string($con, $_POST['email']);
         $password   =  mysqli_real_escape_string($con, $_POST['password']);
