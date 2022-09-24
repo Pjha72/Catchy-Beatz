@@ -25,12 +25,15 @@
             position: relative;
             z-index: 2;
         }
+
         .input-group-prepend {
             padding: 10px;
         }
-        .form-group{
+
+        .form-group {
             padding: 6px;
         }
+
         .divider-text:after {
             border-bottom: 1px solid #ddd;
             content: "";
@@ -50,16 +53,40 @@
             background-color: #ea4335 !important;
             color: #fff !important;
         }
-        .fixingStyle{
-            background: linear-gradient(rgb(21 173 219 / 76%), rgb(183 32 32 / 82%));
 
+        .fixingStyle {
+            background: linear-gradient(rgb(21 173 219 / 76%), rgb(183 32 32 / 82%));
+            border-radius: 5% 14% !important;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://wallpapercave.com/wp/wp2326976.jpg") !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        .bg-dark {
+            --bs-bg-opacity: 0 !important;
+            margin-top: 2rem !important;
 
         }
-       
+
+        .form-control {
+            background: transparent !important;
+            color: white !important;
+        }
+
+        .form-control::placeholder {
+            color: aqua !important;
+            opacity: 0.5 !important;
+        }
+
+        .input-group-text {
+            background: linear-gradient(45deg, rgb(219 143 21 / 76%), rgb(255 0 0 / 78%));
+        }
+
+        .fa {
+            color: white;
+        }
     </style>
 </head>
-
-<body>
-</body>
-
-</html>

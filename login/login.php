@@ -16,18 +16,13 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
-
-    
-    
-
 </head>
 
 <body>
 
     <?php
 
-    include '../dbcon.php';
+    // include '../dbcon.php';
     if (isset($_POST['submit'])) {
         $email      =  mysqli_real_escape_string($con, $_POST['email']);
         $password   =  mysqli_real_escape_string($con, $_POST['password']);
@@ -73,7 +68,7 @@ session_start();
 
 
     <div class="card bg-dark" style="color: white;">
-        <article class="card-body mx-auto" style="max-width: 400px;">
+        <article class="card-body mx-auto fixingStyle" style="max-width: 400px;">
             <h4 class="card-title mt-3 text-center">Create Account</h4>
             <p class="text-center">Get started with your free account</p>
             <p>
