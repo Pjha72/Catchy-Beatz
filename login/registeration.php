@@ -13,7 +13,7 @@ session_start();
 <body>
 <?php
     
-    include '../dbcon.php';
+    // include '../dbcon.php';
 
     if (isset($_POST['submit'])) {
         $username   =  mysqli_real_escape_string($con, $_POST['username']);
@@ -65,7 +65,8 @@ session_start();
 
 ?>
 <div class="card bg-dark" style="color: white;">
-        <article class="card-body mx-auto" style="max-width: 400px;">
+<!-- <div style="background-color:red"> -->
+        <article class="card-body mx-auto fixingStyle" style="max-width: 400px;">
             <h4 class="card-title mt-3 text-center">Create Account</h4>
             <p class="text-center">Get started with your free account</p>
             <p> <a href="" class="btn btn-block btn-gmail" style="background-color: red;"> <i class="fa fa-google"></i> Login via Gmail</a>
@@ -116,6 +117,8 @@ session_start();
     </div> <!-- card.// -->
     </div>
     </div>
+
+    <!-- </div> -->
     </div>
 </body>
 

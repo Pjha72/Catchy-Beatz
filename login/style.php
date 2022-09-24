@@ -9,6 +9,7 @@
             padding: 0;
             font-family: 'Muli', sans-serif;
             box-sizing: border-box;
+            /* background-color:#212529;  */
         }
 
         .divider-text {
@@ -49,6 +50,12 @@
             background-color: #ea4335 !important;
             color: #fff !important;
         }
+        .fixingStyle{
+            background: linear-gradient(rgb(21 173 219 / 76%), rgb(183 32 32 / 82%));
+
+
+        }
+       
     </style>
 </head>
 
