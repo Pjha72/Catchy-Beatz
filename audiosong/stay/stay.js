@@ -64,7 +64,7 @@ function loadTrack(track_index){
 
     updateTimer = setInterval(setUpdate, 1000);
 
-    curr_track.addEventListener('ended', nextTrack);
+    // curr_track.addEventListener('ended', nextTrack);
     // random_bg_color();
 }
 
