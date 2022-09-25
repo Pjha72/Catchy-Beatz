@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Search for a video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="inputWrap">
+                <input type="text" placeholder="YouTube Search.......*" id="search" required>
+                <div class="btnWrapper">
+                    <button class="btn btn-secondary">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="rows">
+            <div class="column">
+                <div id="videos">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--  -->
+
+    <!-- <div style="display:flex;justify-content:center;align-items:center;">
+        <div style="width:400px;height:300px;">
+            <div data-video="-Jqz3GQWhJY" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+            <div style="clear:both;margin:10px;text-align:center">
+            </div>
+        </div>
+    </div> -->
+
+
+    <!--
+        -Jqz3GQWhJY is youtube video id
+    -->
+    <div style="display:flex;justify-content:center;align-items:center;">
+        <div style="width:400px;height:300px;">
+            <div data-video="-Jqz3GQWhJY" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+            <div style="clear:both;margin:10px;text-align:center">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/abfb84fe/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
+<script>
+
+    // var player;
+    // function onYouTubeIframeAPIReady() {
+
+    //     var ctrlq = document.getElementById("youtube-audio");
+    //     ctrlq.innerHTML = '<img id="youtube-icon" src=""/><div id="youtube-player"></div>';
+    //     ctrlq.style.cssText = 'width:150px;margin:2em auto;cursor:pointer;cursor:hand;display:none';
+    //     ctrlq.onclick = toggleAudio;
+
+    //     player = new YT.Player('youtube-player', {
+    //         height: '0',
+    //         width: '0',
+    //         videoId: ctrlq.dataset.video,
+    //         playerVars: {
+    //             autoplay: ctrlq.dataset.autoplay,
+    //             loop: ctrlq.dataset.loop,
+    //         },
+    //         events: {
+    //             'onReady': onPlayerReady,
+    //             'onStateChange': onPlayerStateChange
+    //         }
+    //     });
+    // }
+
+    // function togglePlayButton(play) {
+    //     document.getElementById("youtube-icon").src = play ? "https://as2.ftcdn.net/v2/jpg/01/84/70/55/1000_F_184705557_2ex7eh35MUWVtoheM3QNO14NvTZAejfW.jpg" : "https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-play-icon-png-image_695339.jpg";
+    // }
+
+    // function toggleAudio() {
+    //     if (player.getPlayerState() == 1 || player.getPlayerState() == 3) {
+    //         player.pauseVideo();
+    //         togglePlayButton(false);
+    //     } else {
+    //         player.playVideo();
+    //         togglePlayButton(true);
+    //     }
+    // }
+
+    // function onPlayerReady(event) {
+    //     player.setPlaybackQuality("small");
+    //     document.getElementById("youtube-audio").style.display = "block";
+    //     togglePlayButton(player.getPlayerState() !== 5);
+    // }
+
+    // function onPlayerStateChange(event) {
+    //     if (event.data === 0) {
+    //         togglePlayButton(false);
+    //     }
+    // }
+
+</script>
+
+</html>
