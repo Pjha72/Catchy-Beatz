@@ -22,15 +22,9 @@ $(document).ready(function () {
 
 
             data.items.forEach(item => {
-                video = `
-                        <div style="display:flex;justify-content:center;align-items:center;">
-                            <div style="width:400px;height:300px;">
-                                <div data-video="${item.id.videoId}" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
-                                <div style="clear:both;margin:10px;text-align:center"></div>
-                            </div>
-                        </div>
-                    `
-                $("#videos").append(video)
+                var id = item.id.videoId;
+                console.log(id);
+                
             });
 
 
@@ -43,6 +37,16 @@ $(document).ready(function () {
 
 })
 // <iframe src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
+/*
+< div style = "display:flex;justify-content:center;align-items:center;" >
+    <div style="width:400px;height:300px;">
+        <div data-video="${item.id.videoId}" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+        <div style="clear:both;margin:10px;text-align:center"></div>
+    </div>
+                    </ >
+
+<iframe src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
+*/
 var player;
 function onYouTubeIframeAPIReady() {
 
