@@ -261,6 +261,9 @@ body.dark li a:hover .text {
 	opacity: 0;
 
 }
+.all{
+	margin-top: 30px;
+}
 
 body.dark .menu-bar .mode i.sun {
 	opacity: 1;
@@ -326,13 +329,17 @@ body.dark .switch::before {
 }
 
 /* recently played section */
-.home .text {
+.home-container{
 	width: 100%;
 	height: 0px;
+	padding: 90px 40px;
+}
+.home .text {
+	
 	font-size: 30px;
 	font-weight: 500;
 	color: var(--text-color);
-	padding: 90px 40px;
+	
 }
 
 .count {
@@ -362,7 +369,7 @@ button {
 }
 
 button.btn {
-	color: #ed0000;
+	/* color: #ed0000; */
 	box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
 		inset -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
 
