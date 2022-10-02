@@ -14,7 +14,7 @@
   --primary-color: #695cfe;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
-  --text-color: black;
+  --text-color: #707070;
 
   /* Transition */
   --tran-02: all 0.2s ease;
@@ -38,7 +38,7 @@ body.dark {
   --text-color: #ccc;
 }
 
-/* ===== Siebar ==== */
+/* ===== Sidebar ==== */
 .sidebar {
   position: fixed;
   top: 0;
@@ -317,12 +317,11 @@ body.dark .switch::before {
 /* recently played section */
 .home .text {
   width: 100%;
-  height: 0;
-  font-size: 40px;
-  font-weight: 800;
+  height: 0px;
+  font-size: 30px;
+  font-weight: 500;
   color: var(--text-color);
   padding: 90px 40px;
-  text-align: center;
 }
 
 .count {
@@ -340,7 +339,7 @@ button {
   padding: 20px;
   margin: 30px;
   width: 170px;
-  background: #695cfe;
+  background: #ebeef1;
   cursor: pointer;
   border: none;
   border-radius: 50px;
@@ -352,8 +351,9 @@ button {
 }
 
 button.btn {
-  color: white;
-  box-shadow: none;
+  color: #ed0000;
+  box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    inset -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
 /* .home .text .btn:hover{
