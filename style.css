@@ -6,7 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a{
+  text-decoration: none;
+}
 :root {
   /* Colors */
   --body-color: #e4e9f7;
