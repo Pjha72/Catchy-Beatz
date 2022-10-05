@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catchy Beatz</title>
+    <!-- favicon -->
+    <link rel="icon" type="logo" href="image/Catchy Beatz.webp">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="card.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <!-- 1.logo
+	2.name
+	3.home
+	4.search
+	5.bell icon
+	6.profile -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="image/Catchy Beatz.webp" alt="logo">
+                </span>
+                <div class="text header-text">
+                    <span class="name">Catchy Beatz</span>
+                    <span class="profession">Music</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search..." id="myInput" onkeyup="myFunction()" />
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notification</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="NewRelease.html">
+                            <i class='bx bx-message-alt-add icon'></i>
+                            <span class="text nav-text">New Release</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="YoutubeVideoPlay">
+                            <i class='bx bxl-spring-boot icon'></i>
+                            <span class="text nav-text">Listen By Video</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="ArtistSection/ArtsitForYou.html">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Artist</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="TopPlaylist.html">
+                            <i class='bx bx-paperclip icon'></i>
+                            <span class="text nav-text">Top Playlist</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="login/login.php">
+                        <i class='bx bx-log-out icon' target="_blank"></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">
+                        Dark Mode
+                    </span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <section id="myICONS">
+        <section class="home">
+            <div class="text">
+                Korean
+                <div class="count">
+                    <button type="button" class="btn">View all</button>
+                </div>
+            </div>
+            <div class="cards-list">
+                <div class="card 1">
+                    <div class="card_image">
+                        <img src="https://kpopreviewed.files.wordpress.com/2016/11/twicett.png?w=1200" />
+                    </div>
+                    <div class="card_title title-white">
+                        <p>TT</p>
+                    </div>
+                </div>
+                <div class="card 2">
+                    <div class="card_image">
+                        <img
+                            src="https://kingchoice.me/media/CACHE/images/9703d23fe0966bfaf34e441e27a0a672_k9BXTpL/0b7351223c087b4767d31fa14e925b8b.jpg" />
+                    </div>
+                    <div class="card_title title-white">
+                        <p>Cheer Up</p>
+                    </div>
+                </div>
+                <div class="card 3">
+                    <div class="card_image">
+                        <img src="https://thebiaslistcom.files.wordpress.com/2020/06/twice-more-more.jpg" />
+                    </div>
+                    <div class="card_title">
+                        <p>More More</p>
+                    </div>
+                </div>
+                <div class="card 4">
+                    <div class="card_image">
+                        <img
+                            src="https://images.gmanews.tv/webpics/2020/10/twice_cant_stop_me_2020_10_27_08_40_38.jpg" />
+                    </div>
+                    <div class="card_title title-black">
+                        <p>I Can't Stop Me</p>
+                    </div>
+                </div>
+                <div class="card 5">
+                    <div class="card_image">
+                        <img src="https://6.viki.io/image/419ec166557e4d02b831a5aa0ec5caaf.jpeg?s=900x600&e=t" />
+                    </div>
+                    <div class="card_title title-black">
+                        <p>Blueming</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-list">
+                <div class="card 1">
+                    <div class="card_image">
+                        <img src="https://pbs.twimg.com/media/FDJJdh-UYAQVu9B.jpg" />
+                    </div>
+                    <div class="card_title title-white">
+                        <p>Bad Boy</p>
+                    </div>
+                </div>
+                <div class="card 2">
+                    <div class="card_image">
+                        <img src="https://images.indianexpress.com/2020/08/ice-cream.jpg" />
+                    </div>
+                    <div class="card_title title-white">
+                        <p>Icecream</p>
+                    </div>
+                </div>
+                <div class="card 3">
+                    <div class="card_image">
+                        <img src="https://6.viki.io/image/62de8f5f84fd4c05be19c3971d09ee6e/dummy.jpeg?s=900x600&e=t" />
+                    </div>
+                    <div class="card_title">
+                        <p>Hey You Like That</p>
+                    </div>
+                </div>
+                <div class="card 4">
+                    <div class="card_image">
+                        <img src="https://6.viki.io/image/4066d72927a7427a99ce3da96f35f956/dummy.jpeg?" />
+                    </div>
+                    <div class="card_title title-black">
+                        <p>Love Shot</p>
+                    </div>
+                </div>
+                <div class="card 5">
+                    <div class="card_image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAdiVQe-PXT4NETR9sJPMtK4_ePRbYi0A4ng&usqp=CAU" />
+                    </div>
+                    <div class="card_title title-black">
+                        <p>Momoland</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+    <script src="card.js"></script>
+</body>
+
+</html>
