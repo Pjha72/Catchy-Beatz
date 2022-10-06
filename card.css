@@ -9,8 +9,11 @@
 
 @media screen and (max-width:600px) {
   .cards-list {
-    width: 80%;
+    width: 100%;
     /* flex-direction: column; */
+    overflow-x: auto;
+    flex-wrap: inherit;
+    justify-content: inherit;
   }
 }
 
